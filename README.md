@@ -14,3 +14,8 @@ deno task start
 ```
 
 This will watch the project directory and restart as necessary.
+
+# versions
+
+deno 1.42.4
+fresh 1.6.8
