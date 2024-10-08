@@ -29,6 +29,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "yungo-first-fresh-82"
+          project: "yungo"
           entrypoint: "main.ts"
           root: "."
