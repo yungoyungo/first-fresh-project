@@ -8,7 +8,6 @@ export default function App({ Component }: PageProps) {
         <title>ユ</title>
         <link rel="stylesheet" href="/styles.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check_circle" />
       </head>
       <body>
         <Component />
