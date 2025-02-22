@@ -2,7 +2,7 @@ import Link from "../components/Link.tsx"
 
 export default function Home() {
   return (
-    <div class="mx-auto py-20 flex flex-col items-center justify-center bg-gray-700 font-Dot text-gray-100">
+    <div class="mx-auto py-20 flex flex-col items-center justify-center">
       <h1 class="text-2xl">爆速.com</h1>
       <span class=" border-white hover:rotate-[360deg] transition-transform duration-700" style="font-size:8rem">〄</span>
       <div>こ、これはSOS団じゃなくて</div>
