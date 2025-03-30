@@ -19,8 +19,7 @@ const MahjongTile = () => {
   return (
     <div class="flex flex-col items-center mb-8">
       <div
-        class="cursor-pointer"
-        style="font-size:8rem"
+        class="cursor-pointer text-[8rem]"
         onClick={handleClick}
       >
         {tile}
