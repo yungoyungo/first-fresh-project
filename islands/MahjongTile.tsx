@@ -4,20 +4,31 @@ const MahjongTile = () => {
   const [tile, setTile] = useState("");
   const [clicked, setClicked] = useState(false);
 
-  useEffect(() => {
+  const generateRandomTile = () => {
     const start = 0x1F000;
     const end = 0x1F021;
     const randomCodePoint = Math.floor(Math.random() * (end - start + 1)) + start;
-    setTile(String.fromCodePoint(randomCodePoint));
+    return String.fromCodePoint(randomCodePoint);
+  };
+
+  useEffect(() => {
+    setTile(generateRandomTile());
   }, []);
 
   const handleClick = () => {
-    setTile(`${String.fromCodePoint(0x1F006)}`);
-    setClicked(true);
+    if (clicked) {
+      // 再クリック時にランダムな牌を生成
+      setTile(generateRandomTile());
+      setClicked(false);
+    } else {
+      // 初回クリック時に特定の牌を表示
+      setTile(String.fromCodePoint(0x1F006));
+      setClicked(true);
+    }
   };
 
   return (
-    <div class="flex flex-col items-center mb-8">
+    <div class="flex flex-col items-center mb-8 select-none">
       <div
         class="cursor-pointer text-[8rem]"
         onClick={handleClick}
