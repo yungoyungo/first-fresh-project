@@ -1,12 +1,13 @@
 import Link from "../components/Link.tsx"
+import MahjongTile from "../islands/MahjongTile.tsx";
 
 export default function Home() {
   return (
     <div class="mx-auto py-20 flex flex-col items-center justify-center">
-      <h1 class="text-2xl">爆速.com</h1>
-      <span class=" border-white hover:rotate-[360deg] transition-transform duration-700" style="font-size:8rem">〄</span>
-      <div>こ、これはSOS団じゃなくて</div>
-      <div>U+3004(旧JISマーク)なんだからねっ！</div>
+      {/* <h1 class="text-2xl">爆速.com</h1> */}
+      <span class=" border-white hover:rotate-[360deg] transition-transform duration-700" style="font-size:8rem">
+        <MahjongTile />
+      </span>
       <div class="py-4 px-4 flex flex-col items-center justify-center space-y-2">
         <Link url="https://x.com/sslloowwllyy" text="キュウリンゴ垢" pColor="blue-300" />
         <Link url="https://x.com/pasocon_suko" text="ｗｅｂ屋垢" pColor="teal-300" />
