@@ -6,7 +6,7 @@ const MahjongTile = () => {
 
   const generateRandomTile = () => {
     const start = 0x1F000;
-    const end = 0x1F021;
+    const end = 0x1F02B;
     const randomCodePoint = Math.floor(Math.random() * (end - start + 1)) + start;
     return String.fromCodePoint(randomCodePoint);
   };
