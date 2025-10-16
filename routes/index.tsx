@@ -12,7 +12,7 @@ export default function Home() {
         <Link url="https://x.com/sslloowwllyy" text="本垢" pColor="blue-300" />
         <Link url="https://x.com/pasocon_suko" text="ｗｅｂ屋垢" pColor="teal-300" />
         <Link url="https://x.com/slow_slow_down_" text="車垢" pColor="orang-400" />
-        {/* <Link url="https://x.com/z_sh_rc" text="ゲーム垢" pColor="blue-300" /> */}
+        <Link url="https://x.com/z_sh_rc" text="ゲーム垢" pColor="blue-300" />
         <Link url="https://x.com/slow_slow_shot" text="写真垢" pColor="blue-300" />
         <Link url="https://note.com/sslloowwllyy/" text="note" pColor="blue-300" />
         <Link url="https://photohito.com/user/photo/166054/" text="photohito" pColor="blue-300" />
